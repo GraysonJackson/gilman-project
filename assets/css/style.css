@@ -1,0 +1,116 @@
+:root {
+  --fog: #edf0ee;
+  --paper: #f8faf9;
+  --ink: #16252c;
+  --sea: #2d6a6e;
+  --rule: #c5cfcf;
+  --lamp: #f0c75a;
+  --head: "Bricolage Grotesque", "Helvetica Neue", Arial, sans-serif;
+  --body: "Source Serif 4", Georgia, "Times New Roman", serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--fog);
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: 1.125rem;
+  line-height: 1.65;
+}
+img { max-width: 100%; height: auto; display: block; }
+a { color: var(--sea); text-underline-offset: 0.18em; }
+a:hover { color: var(--ink); }
+a:focus-visible, .button:focus-visible {
+  outline: 3px solid var(--ink);
+  outline-offset: 3px;
+  background: var(--lamp);
+}
+::selection { background: var(--lamp); color: var(--ink); }
+
+h1, h2, h3 { font-family: var(--head); line-height: 1.12; letter-spacing: -0.01em; margin: 0 0 0.6em; }
+h1 { font-size: clamp(2rem, 4.6vw, 3.2rem); font-weight: 700; }
+h2 { font-size: 1.5rem; font-weight: 700; margin-top: 2em; }
+p { margin: 0 0 1.1em; }
+
+.skip { position: absolute; left: -999px; top: 0; background: var(--ink); color: var(--paper); padding: 0.6rem 1rem; z-index: 10; }
+.skip:focus { left: 0; }
+
+.site-header, main, .site-footer { width: min(100% - 2.5rem, 70rem); margin-inline: auto; }
+
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 2rem;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 1.4rem 0 1rem;
+  border-bottom: 2px solid var(--ink);
+}
+.wordmark { font-family: var(--head); font-weight: 700; font-size: 1.2rem; color: var(--ink); text-decoration: none; }
+.site-header nav { display: flex; flex-wrap: wrap; gap: 0.25rem 1.4rem; font-family: var(--head); font-weight: 500; }
+.site-header nav a { color: var(--ink); text-decoration: none; padding: 0.15rem 0; border-bottom: 2px solid transparent; }
+.site-header nav a:hover { border-bottom-color: var(--sea); }
+.site-header nav a[aria-current="page"] { border-bottom-color: var(--ink); }
+
+main { padding: 2.5rem 0 3rem; }
+
+.hero { display: grid; grid-template-columns: 1fr; gap: 2rem; align-items: start; }
+@media (min-width: 52rem) { .hero { grid-template-columns: 5fr 6fr; gap: 3rem; } }
+.hero-text p { max-width: 34rem; }
+.hero-photo { margin: 0; background: var(--paper); padding: 0.6rem 0.6rem 0; border: 1px solid var(--rule); }
+.hero-photo figcaption { padding: 0.7rem 0.3rem 0.9rem; font-size: 0.95rem; line-height: 1.5; }
+
+.button {
+  display: inline-block;
+  font-family: var(--head);
+  font-weight: 700;
+  background: var(--ink);
+  color: var(--paper);
+  padding: 0.7rem 1.2rem;
+  text-decoration: none;
+}
+.button:hover { background: var(--sea); color: var(--paper); }
+
+.band { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--rule); }
+.band > h2 { margin-top: 0; }
+
+.rows { list-style: none; margin: 0; padding: 0; }
+.rows li { padding: 0.9rem 0; border-bottom: 1px solid var(--rule); }
+.rows li:first-child { padding-top: 0; }
+.rows a { font-family: var(--head); font-weight: 700; font-size: 1.2rem; }
+.rows p { margin: 0.3rem 0 0; max-width: 40rem; }
+.meta { display: block; font-size: 0.95rem; color: #46575e; }
+
+.strip { display: grid; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); gap: 0.75rem; margin-bottom: 1rem; }
+.strip img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+
+.prose { max-width: 40rem; }
+.prose h2 { margin-top: 2em; }
+.post-head { margin-bottom: 1.6rem; }
+.post-head .meta { margin-top: -0.2rem; }
+.prose ol, .prose ul { padding-left: 1.3rem; }
+.prose li { margin-bottom: 0.4em; }
+.prose img { margin: 1.5rem 0 0.4rem; }
+.prose .back { margin-top: 2rem; }
+
+.gilman-note {
+  max-width: 40rem;
+  margin-top: 2.5rem;
+  padding: 0.2rem 0 0.2rem 1.1rem;
+  border-left: 5px solid var(--sea);
+}
+.gilman-note h2 { font-size: 1.15rem; margin: 0 0 0.4em; }
+.gilman-note p:last-child { margin-bottom: 0; }
+
+.gallery { columns: 1; column-gap: 1.25rem; }
+@media (min-width: 40rem) { .gallery { columns: 2; } }
+@media (min-width: 64rem) { .gallery { columns: 3; } }
+.shot { break-inside: avoid; margin: 0 0 1.5rem; }
+.shot figcaption { font-size: 0.95rem; line-height: 1.5; padding-top: 0.45rem; }
+.shot strong, .hero-photo strong { font-family: var(--head); color: var(--sea); }
+
+.site-footer { padding: 1.5rem 0 3rem; border-top: 2px solid var(--ink); font-size: 0.92rem; color: #46575e; }
+.site-footer p { max-width: 44rem; }
+.site-footer a { margin-right: 1rem; }

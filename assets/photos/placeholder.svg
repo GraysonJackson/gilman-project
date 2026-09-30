@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1067" role="img" aria-label="Placeholder photo">
+  <rect width="1600" height="1067" fill="#C9D5D4"/>
+  <path d="M0 800 L380 480 L640 700 L980 380 L1600 860 L1600 1067 L0 1067Z" fill="#9FB4B3"/>
+  <circle cx="1220" cy="270" r="90" fill="#E9EFEE"/>
+  <text x="800" y="560" font-family="sans-serif" font-size="56" text-anchor="middle" fill="#16252C">Replace this photo</text>
+  <text x="800" y="630" font-family="sans-serif" font-size="34" text-anchor="middle" fill="#2D6A6E">Edit _data/photos.yml</text>
+</svg>

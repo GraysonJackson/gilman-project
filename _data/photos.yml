@@ -1,0 +1,20 @@
+# One entry per photo. Order here is the order on the page.
+# file:     name of the file inside assets/photos/
+# title:    short title, also used as alt text unless you add alt
+# place:    where it was taken
+# caption:  one or two sentences. Say what you saw or learned.
+# alt:      optional, describes the picture for screen readers
+# featured: true on ONE photo to use it on the home page
+#
+# The two entries below use a placeholder image. Replace them.
+
+- file: placeholder.svg
+  title: TODO first photo title
+  place: Dublin
+  caption: TODO One or two sentences about this photo.
+  featured: true
+
+- file: placeholder.svg
+  title: TODO second photo title
+  place: Dublin
+  caption: TODO One or two sentences about this photo.

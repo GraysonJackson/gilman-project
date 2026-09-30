@@ -1,0 +1,22 @@
+---
+layout: default
+title: Photos
+permalink: /gallery/
+description: Photos from Ireland, with short notes on each.
+---
+<div class="prose">
+  <header class="post-head">
+    <h1>Photos</h1>
+    <p>Photos from Ireland, with a note on each. More on <a href="{{ site.instagram_url }}">Instagram</a>.</p>
+  </header>
+</div>
+<div class="gallery">
+  {% for p in site.data.photos %}
+  <figure class="shot">
+    <a href="{{ '/assets/photos/' | append: p.file | relative_url }}">
+      <img src="{{ '/assets/photos/' | append: p.file | relative_url }}" alt="{{ p.alt | default: p.title }}" loading="lazy">
+    </a>
+    <figcaption><strong>{{ p.place }}.</strong> {{ p.caption }}</figcaption>
+  </figure>
+  {% endfor %}
+</div>

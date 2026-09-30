@@ -1,0 +1,50 @@
+---
+layout: default
+title: Home
+---
+{% assign hero = site.data.photos | where: "featured", true | first %}
+{% assign hero = hero | default: site.data.photos.first %}
+<section class="hero">
+  <div class="hero-text">
+    <h1>I interned in Dublin on a Gilman Scholarship. This is what I saw and learned.</h1>
+    <p>I am a computer science student at the University of Arkansas at Little Rock. This site has my photos, my notes, and a guide for students who think studying or interning abroad is out of reach.</p>
+    <p><a class="button" href="{{ '/guide/' | relative_url }}">Read the guide</a></p>
+  </div>
+  {% if hero %}
+  <figure class="hero-photo">
+    <img src="{{ '/assets/photos/' | append: hero.file | relative_url }}" alt="{{ hero.alt | default: hero.title }}">
+    <figcaption><strong>{{ hero.place }}.</strong> {{ hero.caption }}</figcaption>
+  </figure>
+  {% endif %}
+</section>
+
+<section class="band">
+  <h2>Latest notes</h2>
+  {% if site.posts.size > 0 %}
+  <ul class="rows">
+    {% for post in site.posts limit: 3 %}
+    <li>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      <span class="meta">{{ post.date | date: "%B %-d, %Y" }}</span>
+      {% if post.excerpt %}<p>{{ post.excerpt | strip_html | truncate: 160 }}</p>{% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <p>First posts are coming soon.</p>
+  {% endif %}
+</section>
+
+<section class="band">
+  <h2>Photos</h2>
+  <div class="strip">
+    {% for p in site.data.photos limit: 3 %}
+    <a href="{{ '/gallery/' | relative_url }}"><img src="{{ '/assets/photos/' | append: p.file | relative_url }}" alt="{{ p.alt | default: p.title }}" loading="lazy"></a>
+    {% endfor %}
+  </div>
+  <p><a href="{{ '/gallery/' | relative_url }}">See all photos</a> or follow along on <a href="{{ site.instagram_url }}">Instagram</a>.</p>
+</section>
+
+<section class="band">
+  {% include gilman-note.html %}
+</section>
