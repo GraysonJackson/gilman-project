@@ -6,7 +6,7 @@ author: Grayson Jackson
 # User site (repo named GraysonJackson.github.io): url "https://GraysonJackson.github.io", baseurl ""
 # Project site (any other repo name): same url, baseurl "/your-repo-name"
 url: "https://GraysonJackson.github.io"
-baseurl: ""
+baseurl: "/gilman-project"
 
 instagram_url: "https://www.instagram.com/grayson_photos0/"
 github_url: "https://github.com/GraysonJackson"
