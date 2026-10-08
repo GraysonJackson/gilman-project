@@ -4,11 +4,13 @@ Static site for my Gilman follow-on project: photos, blog posts, and a guide for
 
 ## Publish it
 
-1. Create a new public repo on GitHub. A repo named `GraysonJackson.github.io` gives the URL `https://GraysonJackson.github.io`. Any other name gives `https://GraysonJackson.github.io/repo-name`.
-2. Open `_config.yml`. For a project repo, set `baseurl: "/repo-name"`. For the `.github.io` repo, leave it as `""`.
-3. Push this folder to the repo's default branch.
-4. In the repo, go to Settings, then Pages. Set Source to "Deploy from a branch", pick your branch and `/ (root)`, and save.
-5. Wait a minute or two. The URL appears at the top of the Pages settings.
+This repo is `GraysonJackson/gilman-project`, with `baseurl: "/gilman-project"`. GitHub Pages is already configured to build from `main`.
+
+1. Commit and push the finished files to `main`.
+2. Check the latest **pages build and deployment** run in [GitHub Actions](https://github.com/GraysonJackson/gilman-project/actions).
+3. After the deployment succeeds, open [the site](https://graysonjackson.github.io/gilman-project/). Check the home page, all four posts, guide, About page, and gallery before sharing it.
+
+The four completed posts have been moved into `_posts/` with October 8, 2026 publication dates. New work can start in `_drafts/` until it is ready.
 
 ## Add photos
 
@@ -22,7 +24,7 @@ Static site for my Gilman follow-on project: photos, blog posts, and a guide for
 
 Use [the writing questionnaire](project-notes/writing-questions.md) to fill in the personal details. Answers can be rough notes in chat or in `project-notes/answers.local.md`, which is ignored by Git. The `project-notes` folder is excluded from the generated site; ordinary files there can still be visible in the GitHub repo.
 
-The photos from `Fall.zip` have been processed. Use [the numbered photo index](project-notes/photo-index.jpg) and [filename list](project-notes/photo-index.md) to identify places and supply caption notes before adding them to the gallery.
+The photos from `Fall.zip` have been processed, and all 25 gallery entries have locations, captions, and alt text. The [numbered photo index](project-notes/photo-index.jpg) and [filename list](project-notes/photo-index.md) remain available for reference.
 
 ## Write a post
 
@@ -32,7 +34,19 @@ The photos from `Fall.zip` have been processed. Use [the numbered photo index](p
 
 ## Before you share the link
 
-Run `grep -rn "TODO" . --include="*.md" --include="*.html" --include="*.yml"` and fix every hit in published files. Drafts can keep their TODOs until you publish them.
+Run this from PowerShell and fix any unfinished content in the results:
+
+```powershell
+rg -n 'TODO|placeholder' _posts _data _includes _layouts assets/css about.md guide.md index.html gallery.html blog.html
+```
+
+Drafts can keep their TODOs until they are ready. Private local notes and original photos are ignored by Git and excluded from the generated site.
+
+## Share the finished project
+
+Draft club messages are in `project-notes/club-sharing.local.md`, and the activity record is `project-notes/outreach-log.local.md`. These files are ignored by Git. Share the site after checking the deployment, then record actual sharing dates and responses for the report.
+
+The physical photo display has been removed from the plan. The replacement is the online gallery and photo essay. A Gilman proposal-revision request is drafted in `project-notes/project-revision-request.local.md`; it has not been sent.
 
 ## Preview locally (optional)
 

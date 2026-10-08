@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Why I applied for Gilman"
+description: How I chose Dublin, applied for Gilman, and received support for a CS internship abroad.
 ---
 I wanted to return to Ireland after my first visit in 2024. I remember standing at the Cliffs of Moher with my friends and walking the rainy streets of Galway. I loved the culture, the daily life, and the countryside. When I started looking into an internship abroad, Dublin was where I wanted to go.
 

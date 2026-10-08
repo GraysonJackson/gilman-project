@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "What I worked on in Dublin"
+description: Building a web-based AI research assistant during my internship at NanobOx in Dublin.
 ---
 I spent May 23 to August 15, 2026, interning at NanobOx in Dublin through World Endeavors. My supervisor was [Dr. Mohammad Reza Ghaani](https://www.nanobox.ie/about), who also worked at Trinity College Dublin. I worked at the NanobOx building.
 

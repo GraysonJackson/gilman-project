@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "How I arranged my internship in Dublin"
+description: The advisor, program provider, application support, and funding behind my Dublin internship.
 ---
 I started planning my internship in October. I told Dr. Drew Smith at UA Little Rock that I wanted to return to Ireland and find a program that fit my interests. He helped me choose World Endeavors, which offered internship placements.
 

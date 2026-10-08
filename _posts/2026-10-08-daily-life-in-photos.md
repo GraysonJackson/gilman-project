@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Daily life in Ireland, in photos"
+description: Life with my housemates in Dublin and photos from outings with my best friend Jace.
 ---
 When I first visited Ireland in 2024, I remember standing at the Cliffs of Moher with my friends and walking the rainy streets of Galway. Those memories were part of why I wanted to return. In 2026, I stayed from May 23 to August 15 for an internship in Dublin.
 
