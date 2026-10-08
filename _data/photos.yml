@@ -1,20 +1,157 @@
-# One entry per photo. Order here is the order on the page.
-# file:     name of the file inside assets/photos/
-# title:    short title, also used as alt text unless you add alt
-# place:    where it was taken
-# caption:  one or two sentences. Say what you saw or learned.
-# alt:      optional, describes the picture for screen readers
-# featured: true on ONE photo to use it on the home page
-#
-# The two entries below use a placeholder image. Replace them.
+# Photos follow the numbered index in project-notes/photo-index.jpg.
+# Locations and personal details were supplied by Grayson.
+# featured selects the home-page image; preview selects the home-page strip.
 
-- file: placeholder.svg
-  title: TODO first photo title
-  place: Dublin
-  caption: TODO One or two sentences about this photo.
+- file: mg-4122.jpg
+  title: Gorilla at Dublin Zoo
+  place: Dublin Zoo
+  caption: I visited Dublin Zoo with Jace, my roommate and best friend.
+  alt: A gorilla standing among green plants and yellow flowers.
+
+- file: mg-4170.jpg
+  title: Red panda among the bamboo
+  place: Dublin Zoo
+  caption: A red panda among the bamboo during our visit to the zoo.
+  alt: A red panda partly hidden by narrow green bamboo leaves.
+
+- file: mg-4178.jpg
+  title: A closer look at the red panda
+  place: Dublin Zoo
+  caption: Another photo of the red panda from the same visit with Jace.
+  alt: A red panda facing the camera with bamboo leaves near its mouth.
+
+- file: mg-4194.jpg
+  title: Bird among the leaves
+  place: Dublin Zoo
+  caption: A bird I photographed during our day at Dublin Zoo.
+  alt: A gray bird in profile surrounded by green leaves.
+
+- file: mg-4308.jpg
+  title: A stop in Phoenix Park
+  place: Phoenix Park, Dublin
+  caption: A stop in Phoenix Park during a day out with Jace.
+  alt: A person sitting on a white bench beneath trees in a grassy park.
+
+- file: mg-4322.jpg
+  title: Irish countryside
+  place: Irish countryside
+  caption: The countryside was one of the things I loved about Ireland. I took this photo while traveling with Jace.
+  alt: Green fields and trees across a valley beneath low clouds and distant hills.
+
+- file: mg-4341.jpg
+  title: The island from the water
+  place: Inis Mór, Aran Islands
+  caption: A view from the water on the day Jace and I visited the Aran Islands and the Cliffs of Moher.
+  alt: A low rocky shore with a small stone ruin, seen across choppy water.
+
+- file: mg-4361.jpg
+  title: Out on the water
+  place: Inis Mór, Aran Islands
+  caption: On the boat during our full day of travel to the Aran Islands and the Cliffs of Moher.
+  alt: Open water beside a passenger boat with an orange life ring on its side.
+  preview: true
+
+- file: mg-4382.jpg
+  title: Along an island road
+  place: Inis Mór, Aran Islands
+  caption: Houses and stone walls along the road during our island visit.
+  alt: A curving road beside stone walls, hedges, and houses.
+
+- file: mg-4388.jpg
+  title: Rock and greenery
+  place: Inis Mór, Aran Islands
+  caption: A view of the rocky landscape from the same day out with Jace.
+  alt: Exposed rock ledges below a green slope, with a small structure near the water.
+
+- file: mg-4399.jpg
+  title: Stone walls by the sea
+  place: Inis Mór, Aran Islands
+  caption: Stone walls, grass, and the sea during our visit to the island.
+  alt: A dry-stone wall in front of grassy fields and the sea beneath a cloudy sky.
+
+- file: mg-4463.jpg
+  title: The rocky shoreline
+  place: Inis Mór, Aran Islands
+  caption: The shoreline during our Aran Islands visit.
+  alt: Broad slabs of coastal rock beside waves breaking along the shore.
+
+- file: mg-4665.jpg
+  title: A coastal view
+  place: Inis Mór, Aran Islands
+  caption: A coastal view from the day we visited the Aran Islands and the Cliffs of Moher.
+  alt: A grassy coastal headland with a walkway and railing above the sea.
+
+- file: mg-4701.jpg
+  title: Cliffs of Moher
+  place: Cliffs of Moher
+  caption: My favorite stop from a full day of travel with Jace. We visited the Aran Islands and the cliffs on the same day.
+  alt: Tall sea cliffs topped with green grass, stretching into the distance above the Atlantic.
   featured: true
+  preview: true
 
-- file: placeholder.svg
-  title: TODO second photo title
-  place: Dublin
-  caption: TODO One or two sentences about this photo.
+- file: mg-4705.jpg
+  title: The cliffs and the Atlantic
+  place: Cliffs of Moher
+  caption: Another view of the cliffs from my favorite outing of the trip.
+  alt: A line of steep grassy cliffs above sunlit water.
+
+- file: mg-4706.jpg
+  title: Looking along the cliffs
+  place: Cliffs of Moher
+  caption: Jace and I saw so many beautiful things during that day of traveling. The cliffs were my favorite.
+  alt: Green grass along a cliff edge, with steep sea cliffs stretching away beyond it.
+
+- file: mg-4719.jpg
+  title: A field near the cliffs
+  place: Cliffs of Moher
+  caption: A field near the cliffs during the same day out.
+  alt: Sheep scattered across a green field beneath a blue sky with white clouds.
+
+- file: mg-4747.jpg
+  title: Across the cliffs
+  place: Cliffs of Moher
+  caption: One more view from our visit to the Cliffs of Moher.
+  alt: A grassy foreground overlooking dark cliffs and the sea under a cloudy sky.
+
+- file: mg-4766.jpg
+  title: The paths near the cliffs
+  place: Cliffs of Moher
+  caption: The paths and grass-covered building near the cliffs.
+  alt: Paths and steps beside a building set into a grassy slope, with visitors in the distance.
+
+- file: mg-4775.jpg
+  title: Musicians on Grafton Street
+  place: Grafton Street, Dublin
+  caption: Musicians I photographed on Grafton Street in Dublin.
+  alt: Two musicians performing outdoors with microphones, with other people behind them.
+
+- file: mg-4917.jpg
+  title: A garden path
+  place: National Botanic Gardens, Dublin
+  caption: A garden path framed by greenery during my visit to the botanic gardens.
+  alt: A shaded archway covered in plants opening onto a sunlit garden path and stone wall.
+  preview: true
+
+- file: mg-4925.jpg
+  title: Flowers in the gardens
+  place: National Botanic Gardens, Dublin
+  caption: Flowers I photographed in the botanic gardens.
+  alt: Pale pink and white flowers against dark green leaves.
+
+- file: mg-4926.jpg
+  title: A statue in the gardens
+  place: National Botanic Gardens, Dublin
+  caption: A statue among the plants during the same garden visit.
+  alt: A white statue of a robed figure on a pedestal, surrounded by trees and flowers.
+
+- file: mg-4936.jpg
+  title: A bridge in the gardens
+  place: National Botanic Gardens, Dublin
+  caption: A small bridge along a path through the gardens.
+  alt: A person standing on a narrow bridge with dark railings and stone steps.
+
+- file: mg-4942.jpg
+  title: Under the trees
+  place: National Botanic Gardens, Dublin
+  caption: Benches and shade beneath the trees in the gardens.
+  alt: Benches beneath dense trees with bright garden paths visible beyond the shade.

@@ -14,8 +14,15 @@ Static site for my Gilman follow-on project: photos, blog posts, and a guide for
 
 1. Put full-size photos in a folder named `originals` (git-ignored).
 2. Run `pip install pillow` once, then `python scripts/prepare_photos.py originals assets/photos`. This resizes them and strips GPS data.
+   The script also gives photos web-safe filenames, such as `mg-4122.jpg` for `_MG_4122.JPG`, without leading underscores that Jekyll may skip.
 3. Add an entry for each photo in `_data/photos.yml`. Delete the placeholder entries.
 4. Set `featured: true` on the one photo for the home page.
+
+## Finish the writing
+
+Use [the writing questionnaire](project-notes/writing-questions.md) to fill in the personal details. Answers can be rough notes in chat or in `project-notes/answers.local.md`, which is ignored by Git. The `project-notes` folder is excluded from the generated site; ordinary files there can still be visible in the GitHub repo.
+
+The photos from `Fall.zip` have been processed. Use [the numbered photo index](project-notes/photo-index.jpg) and [filename list](project-notes/photo-index.md) to identify places and supply caption notes before adding them to the gallery.
 
 ## Write a post
 

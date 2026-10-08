@@ -38,7 +38,8 @@ title: Home
 <section class="band">
   <h2>Photos</h2>
   <div class="strip">
-    {% for p in site.data.photos limit: 3 %}
+    {% assign preview_photos = site.data.photos | where: "preview", true %}
+    {% for p in preview_photos limit: 3 %}
     <a href="{{ '/gallery/' | relative_url }}"><img src="{{ '/assets/photos/' | append: p.file | relative_url }}" alt="{{ p.alt | default: p.title }}" loading="lazy"></a>
     {% endfor %}
   </div>
