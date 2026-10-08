@@ -2,9 +2,7 @@ title: From Dublin to Little Rock
 description: Photos, notes, and a guide from a CS student who interned in Dublin on a Gilman Scholarship.
 author: Grayson Jackson
 
-# Set these after you create the repo.
-# User site (repo named GraysonJackson.github.io): url "https://GraysonJackson.github.io", baseurl ""
-# Project site (any other repo name): same url, baseurl "/your-repo-name"
+# GitHub Pages project site.
 url: "https://GraysonJackson.github.io"
 baseurl: "/gilman-project"
 
@@ -18,5 +16,5 @@ exclude:
   - scripts
   - Gemfile
   - Gemfile.lock
-  - project-notes
+  - .local
   - originals
